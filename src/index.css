@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+  @keyframes rotate-particle {
+    0% { transform: rotate(0deg) translateY(var(--radius)) rotate(0deg); }
+    100% { transform: rotate(360deg) translateY(var(--radius)) rotate(-360deg); }
+  }
+  .animate-rotate-particle {
+    animation: rotate-particle 8s linear infinite;
+    animation-delay: var(--delay);
+  }
+  .react-calendar__tile.highlight-date {
+  background-color: #D75A28 !important;
+  color: white !important;
+  border-radius: 90% !important;
+}
+
+.react-calendar {
+  width: 100%;
+  max-width: 100%;
+  background: white;
+  border: 1px solid #e6a47e;
+  border-radius: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.125em;
+}
